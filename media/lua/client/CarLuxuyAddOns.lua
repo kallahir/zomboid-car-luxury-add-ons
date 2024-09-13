@@ -103,8 +103,7 @@ Events.OnEnterVehicle.Add(onEnterVehicle)
 Events.OnExitVehicle.Add(onExitVehicle)
 
 local function onKeyStartPressed(key)
-    -- if key == Keyboard.KEY_W or key == Keyboard.KEY_N then
-    if key == Keyboard.KEY_W then
+    if key == Keyboard.KEY_W or key == Keyboard.KEY_S then
         if data.vehicle ~= nil then
             print("[onKeyStartPressed] Player is within a vehicle")
             if data.stopStart then
